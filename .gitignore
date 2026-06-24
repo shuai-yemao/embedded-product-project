@@ -1,0 +1,69 @@
+# 临时文件
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 编译产物
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.axf
+*.out
+*.d
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 固件编译产物
+04_Firmware/build/
+04_Firmware/output/
+04_Firmware/bin/
+04_Firmware/obj/
+
+# 软件编译产物
+05_Software/build/
+05_Software/output/
+05_Software/bin/
+05_Software/obj/
+05_Software/__pycache__/
+05_Software/**/*.pyc
+
+# 上位机工具
+06_Tools/web-control/node_modules/
+06_Tools/web-control/dist/
+06_Tools/web-control/build/
+06_Tools/app-control/build/
+06_Tools/app-control/.dart_tool/
+
+# 测试报告
+07_Tests/reports/*.html
+07_Tests/reports/*.xml
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 日志文件
+*.log
+logs/
