@@ -25,6 +25,9 @@ Thumbs.db
 *.swo
 *~
 
+# Claude Code 配置（保留项目级配置）
+# .claude/
+
 # 操作系统文件
 .DS_Store
 .DS_Store?

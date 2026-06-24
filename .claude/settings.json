@@ -1,0 +1,15 @@
+{
+  "skills": {
+    "directories": [
+      "C:/Users/zhang/.claude/skills",
+      "C:/Users/zhang/.claude/plugins/cache/ecc/ecc/2.0.0/skills",
+      "C:/Users/zhang/.claude/plugins/cache/superpowers-marketplace/superpowers/6.0.2/skills"
+    ]
+  },
+  "workflows": {
+    "directories": [
+      "C:/Users/zhang/.claude/workflows",
+      ".claude/workflows"
+    ]
+  }
+}
