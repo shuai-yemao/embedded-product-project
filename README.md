@@ -32,10 +32,9 @@
 ├── 02_Hardware/                    # 硬件设计
 ├── 03_Mechanical/                  # 机械设计
 ├── 04_Firmware/                    # 固件开发
-├── 05_Software/                    # 应用软件
-├── 06_Tools/                       # 上位机工具
+├── 05_Software/                    # 应用软件（含测试）
 ├── 06_Factory/                     # 工厂生产
-└── 07_Tests/                       # 测试
+└── 07_Tools/                       # 上位机工具
 ```
 
 ## 功能特性
@@ -58,23 +57,11 @@
 - 驱动程序开发
 - RTOS集成
 
-### 4. 应用软件开发
+### 4. 应用软件开发（含测试）
 - 业务逻辑实现
 - 算法开发
 - 通信协议
 - 服务层设计
-
-### 5. 上位机工具开发
-- Web控制端（React/Vue）
-- APP控制端（Flutter/React Native）
-- 桌面工具（Python/C#）
-
-### 6. 机械设计支持
-- 3D建模
-- 外壳设计
-- 装配设计
-
-### 7. 测试与质量保证
 - 单元测试
 - 集成测试
 - 系统测试
@@ -104,10 +91,9 @@ mkdir -p 00_Reference/{documentation/{system/{architecture,decisions},user-manua
 mkdir -p 02_Hardware/{architecture,schematic,pcb,bom,interface,review}
 mkdir -p 03_Mechanical/{architecture,3d-model,shell-design,assembly,interface,review}
 mkdir -p 04_Firmware/{architecture,bsp,drivers,middleware,rtos,interface,tests,docs}
-mkdir -p 05_Software/{architecture,core,algorithms,protocols,services,interface,tests,docs}
-mkdir -p 06_Tools/{architecture,web-control/src,app-control/src,desktop-tools/{serial-monitor,data-analyzer,configuration},scripts/{build,deploy,test}}
+mkdir -p 05_Software/{architecture,core,algorithms,protocols,services,interface,tests/{unit,integration,system,performance,reports},docs}
 mkdir -p 06_Factory/{production-plan,quality,factory-test,deployment,process}
-mkdir -p 07_Tests/{unit,integration,system,performance,reports}
+mkdir -p 07_Tools/{architecture,web-control/src,app-control/src,desktop-tools/{serial-monitor,data-analyzer,configuration},scripts/{build,deploy,test}}
 ```
 
 ### 3. 配置 Claude Code
@@ -168,19 +154,17 @@ mkdir -p 07_Tests/{unit,integration,system,performance,reports}
 2. 核心业务逻辑开发
 3. 算法实现
 4. 通信协议开发
+5. 单元测试
+6. 集成测试
+7. 系统测试
+8. 性能测试
 
 ### 阶段 5: 上位机开发 (Sprint 3-N)
 1. Web控制端开发
 2. APP控制端开发
 3. 桌面工具开发
 
-### 阶段 6: 测试验证 (Sprint N)
-1. 单元测试
-2. 集成测试
-3. 系统测试
-4. 性能测试
-
-### 阶段 7: 生产准备 (发布前)
+### 阶段 6: 生产准备 (发布前)
 1. 生产计划
 2. 质量控制
 3. 工厂测试

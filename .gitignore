@@ -48,16 +48,16 @@ Thumbs.db
 05_Software/__pycache__/
 05_Software/**/*.pyc
 
-# 上位机工具
-06_Tools/web-control/node_modules/
-06_Tools/web-control/dist/
-06_Tools/web-control/build/
-06_Tools/app-control/build/
-06_Tools/app-control/.dart_tool/
-
 # 测试报告
-07_Tests/reports/*.html
-07_Tests/reports/*.xml
+05_Software/tests/reports/*.html
+05_Software/tests/reports/*.xml
+
+# 上位机工具
+07_Tools/web-control/node_modules/
+07_Tools/web-control/dist/
+07_Tools/web-control/build/
+07_Tools/app-control/build/
+07_Tools/app-control/.dart_tool/
 
 # 环境变量
 .env

@@ -85,7 +85,7 @@ jobs:
 
       - name: Run unit tests
         run: |
-          pytest 07_Tests/unit/ --cov=05_Software --cov-report=xml
+          pytest 05_Software/tests/unit/ --cov=05_Software --cov-report=xml
 
       - name: Upload coverage reports
         uses: codecov/codecov-action@v3
@@ -107,7 +107,7 @@ jobs:
 
       - name: Generate API documentation
         run: |
-          cd 06_Tools/web-control
+          cd 07_Tools/web-control
           npm install
           npm run docs
 
@@ -131,7 +131,7 @@ jobs:
 
       - name: Build web control
         run: |
-          cd 06_Tools/web-control
+          cd 07_Tools/web-control
           npm install
           npm run build
 
@@ -139,7 +139,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: web-control
-          path: 06_Tools/web-control/dist/
+          path: 07_Tools/web-control/dist/
 
   # APP构建
   app-build:
@@ -155,7 +155,7 @@ jobs:
 
       - name: Build Flutter app
         run: |
-          cd 06_Tools/app-control
+          cd 07_Tools/app-control
           flutter pub get
           flutter build apk
 
@@ -163,7 +163,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: app-control
-          path: 06_Tools/app-control/build/app/outputs/flutter-apk/
+          path: 07_Tools/app-control/build/app/outputs/flutter-apk/
 
   # 部署文档
   deploy-docs:
